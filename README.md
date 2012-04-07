@@ -47,7 +47,7 @@ Add it to the [apps](https://github.com/codeforamerica/open311/wiki/apps) wiki!
 
     # Use Time.now
     require 'time'
-    Open311.service_requests({"start_date" => (Time.now - 86400).xmlschema, "end_date" => Time.now.xmlschema}) // last 24 hours
+    Open311.service_requests({"start_date" => (Time.now - 86400).xmlschema, "end_date" => Time.now.xmlschema}) # last 24 hours
 
     # Get multiple service requests by ids, comma separated
     Open311.service_requests({"service_request_id" => "101000119824,101000119823"})
